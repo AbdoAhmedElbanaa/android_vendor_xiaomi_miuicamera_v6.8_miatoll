@@ -1,0 +1,201 @@
+//
+// Copyright (C) 2023-2026 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+soong_namespace {
+}
+
+android_app_import {
+	name: "MiuiCamera",
+	owner: "xiaomi",
+	apk: "proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk",
+	overrides: ["Camera2", "Flash"],
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: false,
+}
+
+cc_prebuilt_library_shared {
+	name: "libcamera_algoup_jni.xiaomi",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libcamera_algoup_jni.xiaomi.so"],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libcamera_jpegutil_jni.xiaomi",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libcamera_jpegutil_jni.xiaomi.so"],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libcamera_mianode_jni.xiaomi",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libcamera_mianode_jni.xiaomi.so"],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libdoc_photo",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libdoc_photo.so"],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libdoc_photo_c++_shared",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libdoc_photo_c++_shared.so"],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libgallery_arcsoft_dualcam_refocus",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libgallery_arcsoft_dualcam_refocus.so"],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libgallery_arcsoft_portrait_lighting",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libgallery_arcsoft_portrait_lighting.so"],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libgallery_arcsoft_portrait_lighting_c",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libgallery_arcsoft_portrait_lighting_c.so"],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libgallery_mpbase",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libgallery_mpbase.so"],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmibokeh_gallery",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libmibokeh_gallery.so"],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "librefocus",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/librefocus.so"],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "librefocus_mibokeh",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/librefocus_mibokeh.so"],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}

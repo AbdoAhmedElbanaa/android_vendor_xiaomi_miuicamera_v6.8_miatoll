@@ -1,0 +1,8 @@
+*.pyc
+__pycache__/
+.DS_Store
+*.swp
+*~
+
+# Reassembled APK is assembled at build time
+proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk
