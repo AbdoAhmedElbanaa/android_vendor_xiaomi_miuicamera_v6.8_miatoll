@@ -199,3 +199,63 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 }
+
+cc_prebuilt_library_shared {
+	name: "libmorpho_memory_allocator",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libmorpho_memory_allocator.so"],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmorpho_panorama_gp3",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libmorpho_panorama_gp3.so"],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmorpho_sensor_fusion",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libmorpho_sensor_fusion.so"],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libcamera_960_mpbase",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libcamera_960_mpbase.so"],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
